@@ -8,8 +8,8 @@ interface Props {
 
 const ItemMovie: React.FC<Props> = ({valueInfo, onChangeInput, deleteMovies}) => {
   return (
-    <div>
-      <input value={valueInfo} onChange={onChangeInput} className="form-control" />
+    <div className="d-flex m-3">
+      <input value={valueInfo} onChange={onChangeInput} className="form-control m-2" />
       <button className="btn btn-primary" onClick={deleteMovies}>Delete</button>
     </div>
   );

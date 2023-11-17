@@ -26,9 +26,9 @@ const WatchMovie = () => {
 
   return (
     <>
-      <div>
-        <input type="text" className="form-control" onChange={createMovie} value={movie}/>
-        <button className="btn btn-primary" onClick={addElemMovie}>Add</button>
+      <div className="d-flex">
+        <input type="text" className="form-control m-3" onChange={createMovie} value={movie}/>
+        <button className="btn btn-primary m-2" onClick={addElemMovie}>Add</button>
       </div>
       {addMovie.map((person, index) => (
         <ItemMovie
